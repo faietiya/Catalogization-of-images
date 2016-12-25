@@ -1,3 +1,1 @@
-# Image-recognition
-
-lalala
+# Programm of images's catalogization

@@ -7,8 +7,6 @@ import scipy as ss
 import scipy.stats as st
 import matplotlib.pyplot as plt
 
-
-
 def detectFaceFrontal(key,out):
  face_cascade = cv2.CascadeClassifier('/home/kk/opencv/data/haarcascades/haarcascade_frontalface_default.xml')
  img = cv2.imread(key,4)
@@ -152,8 +150,6 @@ def detectType(key,out):
  hiss = plt.hist(img.ravel(),256,[0,256])
  if out == 1:
   plt.show()
-
-
  dataOfHistogram = list(hiss)
  print (dataOfHistogram)
  #c.count(0)
@@ -214,8 +210,6 @@ def makeDict():
   with open('index','w') as f:
    json.dump(imgDict,f)
 
-
-    
 if __name__=="__main__":
  out = 0
  makeDict()
